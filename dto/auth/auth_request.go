@@ -9,7 +9,7 @@ type AuthRequest struct {
 	Phone     string `json:"phone" form:"phone" validate:"required"`
 	Address   string `json:"address" form:"address" validate:"required"`
 	Subscribe bool   `json:"subscribe" form:"false"`
-	Role      string `json:"roles" form:"roles" gorm:"type: varchar(255)"`
+	Role      string `json:"role" form:"role" gorm:"type: varchar(255)"`
 }
 
 type LoginRequest struct {
